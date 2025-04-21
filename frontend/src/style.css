@@ -1,0 +1,84 @@
+/* General Reset */
+html, body {
+    height: 100%; /* Full height for proper layout */
+    margin: 0; /* Remove default margins */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: Arial, sans-serif; /* Set a clean font */
+  }
+  
+  /* Wrapper for Flexbox Layout */
+  .wrapper {
+    display: flex;
+    overflow: visible !important;
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Navbar */
+  #navbar {
+    position: sticky; /* Stick to the top of the viewport */
+    top: 0; /* Start at the top */
+    z-index: 10; /* Keep above other elements */
+    background-color: #343a40; /* Dark background */
+    color: white; /* Light text */
+    padding: 10px 20px; /* Add some padding */
+    border-bottom: 2px solid #ffc107; /* Add a yellow border */
+  }
+  
+  /* Content Area */
+  .content {
+    overflow: visible !important;
+    flex: 1; /* Take remaining space */
+    width: 100%; /* Full width */
+    padding: 20px; /* Add spacing */
+    background-color: #f8f9fa; /* Light background for readability */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+  }
+  
+  /* Center Alignment for Welcome Message */
+  .welcome-container {
+    text-align: center;
+    background-color: #212529; /* Dark background */
+    color: white; /* Light text */
+    padding: 50px 20px; /* Spacing inside the container */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px auto; /* Center horizontally */
+    max-width: 800px; /* Limit the width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .welcome-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-container button {
+    background-color: #ffc107; /* Yellow button */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .welcome-container button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 1rem; /* Add padding */
+    font-size: 1rem; /* Adjust font size */
+    border-top: 2px solid #ffc107; /* Yellow border for emphasis */
+  }
+  
